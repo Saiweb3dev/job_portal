@@ -1,0 +1,11 @@
+user_id,category_id,title,description,location,salary,type
+1,1,Backend Developer,Develop APIs using Laravel.,New York,80000,full-time
+3,2,Marketing Specialist,Manage digital campaigns.,San Francisco,60000,part-time
+5,3,UI/UX Designer,Design intuitive user interfaces.,Remote,70000,remote
+7,4,Sales Executive,Expand client base.,Chicago,50000,full-time
+9,5,Customer Support Rep,Handle customer queries.,Austin,40000,full-time
+1,6,Data Analyst,Analyze business data.,Seattle,75000,full-time
+3,7,HR Manager,Manage recruitment.,Boston,65000,full-time
+5,8,Accountant,Manage financial records.,Miami,68000,contract
+7,9,Product Manager,Lead product development.,Denver,90000,full-time
+9,10,Legal Advisor,Provide legal counsel.,Washington DC,85000,part-time

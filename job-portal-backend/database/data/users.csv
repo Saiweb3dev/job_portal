@@ -1,0 +1,11 @@
+name,email,password,role
+Alice Johnson,alice@example.com,password,employer
+Bob Smith,bob@example.com,password,applicant
+Charlie Brown,charlie@example.com,password,employer
+Diana Prince,diana@example.com,password,applicant
+Evan Stone,evan@example.com,password,employer
+Fiona Glass,fiona@example.com,password,applicant
+George Hall,george@example.com,password,employer
+Hannah Lee,hannah@example.com,password,applicant
+Ian Moore,ian@example.com,password,applicant
+Julia Rose,julia@example.com,password,employer

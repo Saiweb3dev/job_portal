@@ -1,0 +1,11 @@
+user_id,job_id,cover_letter,resume_path
+2,1,Excited to apply for the Backend Developer role.,resumes/resume1.pdf
+4,2,I have 3 years of marketing experience.,resumes/resume2.pdf
+6,3,I am skilled in Figma and Adobe XD.,resumes/resume3.pdf
+8,4,Sales is my passion and strength.,resumes/resume4.pdf
+2,5,Experience in customer handling.,resumes/resume5.pdf
+4,6,Strong background in data visualization.,resumes/resume6.pdf
+6,7,Worked as HR coordinator at XYZ.,resumes/resume7.pdf
+8,8,CPA certified accountant.,resumes/resume8.pdf
+2,9,Led several product launches.,resumes/resume9.pdf
+4,10,Law graduate with 2 years' experience.,resumes/resume10.pdf

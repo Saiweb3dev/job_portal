@@ -6,15 +6,27 @@ use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\JobController;
 use App\Http\Controllers\Api\AuthController;
 
-// Route::get('/user', function (Request $request) {
-//     return $request->user();
-// })->middleware('auth:sanctum');
-
+// Authentication routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 
+// Protected routes
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::get('/user', [AuthController::class, 'getUser']);
+
+    // Role-specific routes
+    Route::middleware('role:admin')->group(function () {
+        // Admin-only routes
+    });
+
+    Route::middleware('role:employer')->group(function () {
+        // Employer-only routes
+    });
+
+    Route::middleware('role:applicant')->group(function () {
+        // Applicant-only routes
+    });
 });
 
 // Public read endpoints

@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
+        // Only run in testing environment to prevent issues with RefreshDatabase
+        if (app()->environment('testing')) {
+            // Drop sessions table if it exists to allow Laravel to recreate it with proper schema
+            Schema::dropIfExists('sessions');
+        }
         Schema::create('sessions', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->foreignId('user_id')->nullable()->index();

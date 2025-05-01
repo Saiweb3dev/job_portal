@@ -22,6 +22,9 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::middleware('role:employer')->group(function () {
         // Employer-only routes
+        Route::post('/jobs', [JobController::class, 'store']);
+        Route::put('/jobs/{id}', [JobController::class, 'update']);
+        Route::delete('/jobs/{id}', [JobController::class, 'destroy']);
     });
 
     Route::middleware('role:applicant')->group(function () {

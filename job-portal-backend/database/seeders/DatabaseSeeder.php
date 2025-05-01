@@ -8,6 +8,7 @@ use App\Models\Job;
 use App\Models\Application;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+// php artisan migrate:fresh --seed
 
 class DatabaseSeeder extends Seeder
 {

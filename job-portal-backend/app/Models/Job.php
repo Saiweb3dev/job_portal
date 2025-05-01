@@ -12,9 +12,12 @@ class Job extends Model
         'description',
         'location',
         'salary',
-        'type',          // full-time, part-time, etc.
+        'type',
         'user_id',
         'category_id',
+        'deadline',
+        'status',
+        'applications_count',
     ];
 
     public function user()

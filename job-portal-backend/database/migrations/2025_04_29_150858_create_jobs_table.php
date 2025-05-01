@@ -20,6 +20,9 @@ return new class extends Migration
             $table->string('location');
             $table->integer('salary')->nullable();
             $table->enum('type',['full-time','part-time','remote','contract']);
+            $table->date('deadline');
+            $table->enum('status', ['open', 'closed'])->default('open');
+            $table->integer('applications_count')->default(0);
             $table->timestamps();
         });
     }
